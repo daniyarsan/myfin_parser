@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+error_reporting(E_ALL ^ E_DEPRECATED);
+
+require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/bootstrap-cli.php';
+
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->add(new \Daniyarsan\Testtask\Commands\MyfinParserCommand($entityManager));
+$application->run();
