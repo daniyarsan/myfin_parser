@@ -17,6 +17,7 @@ php bin/doctrine orm:schema-tool:create
 
 ```php
  php ./bin/console app:parse-myfin
+ ```
  
  ====================
  Задание для PHP разработчика.
